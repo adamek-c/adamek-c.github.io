@@ -18,6 +18,7 @@
   --letter-space-text: 0.11rem;
   /* line hight */
   --line-height: 1.15px;
+  --font-family: "Poppins", sans-serif;
 }
 
 *,
@@ -32,6 +33,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 65.5%;
+  font-family: var(--font-family);
 }
 
 body {
