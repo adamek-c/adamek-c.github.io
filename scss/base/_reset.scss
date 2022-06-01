@@ -1,0 +1,30 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 65.5%;
+}
+
+body {
+	letter-spacing: var(--letter-space-text);
+	line-height: var(--line-height);
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	display: block;
+}

@@ -1,0 +1,14 @@
+$breakpoints: (
+	small: (
+		min-width: 425px,
+	),
+	medium: (
+		min-width: 768px,
+	),
+	large: (
+		min-width: 1024px,
+	),
+	xl: (
+		min-width: 1500px,
+	),
+);

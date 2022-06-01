@@ -1,0 +1,25 @@
+:root {
+	/* color */
+	--color-yellow: hsla(44, 100%, 52%, 0.7);
+	--color-red: hsla(334, 100%, 50%, 0.7);
+	--color-purpul: hsla(265, 83%, 57%, 0.7);
+	--color-blue: hsla(217, 100%, 61%, 0.7);
+	--color-black: hsla(0, 0%, 0%, 0.7);
+	--color-white: hsla(0, 0%, 100%, 100%);
+
+	/* decoration-colore */
+	--color-decoration-purpl: hsla(265, 83%, 57%, 46%);
+	--color-decoration-box: hsla(0, 0%, 14%, 100%);
+
+	/* background-color */
+	--background-color-grey: hsla(0, 0%, 77%, 15%);
+	--background-color-grey-btn: hsla(0, 0%, 92%, 100%);
+	--background-color-grey-input: hsla(0, 0%, 93%, 100%);
+	--background-color-purple-bt: hsla(265, 83%, 57%, 100%);
+
+	/* Space */
+	--letter-space-text: 0.11rem;
+
+	/* line hight */
+	--line-height: 1.15px;
+}
