@@ -14,7 +14,6 @@ html {
 
 body {
 	letter-spacing: var(--letter-space-text);
-	line-height: var(--line-height);
 }
 
 a {
@@ -23,9 +22,4 @@ a {
 
 li {
 	list-style: none;
-}
-
-img {
-	width: 100%;
-	display: block;
 }

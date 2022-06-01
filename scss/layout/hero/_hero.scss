@@ -1,0 +1,121 @@
+.hero {
+	@extend %container;
+	overflow: hidden;
+	margin-top: 2.4rem;
+
+	&__front {
+		display: grid;
+		width: 100%;
+		height: 100%;
+		padding: 2rem;
+		margin-top: 4rem;
+		line-height: 4rem;
+
+		@include mq(small) {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		@include mq(large) {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 0;
+		}
+	}
+
+	&__dots {
+		display: flex;
+		line-height: 1.5rem;
+
+		@include mq(xl) {
+			margin-bottom: 2rem;
+		}
+
+		&__yellow {
+			@include dots;
+			background-color: var(--color-yellow);
+		}
+		&__red {
+			@include dots;
+			background-color: var(--color-red);
+		}
+		&__purple {
+			@include dots;
+			background-color: var(--color-purple);
+		}
+		&__blue {
+			@include dots;
+			background-color: var(--color-blue);
+		}
+	}
+
+	&__title {
+		font-size: 2.5rem;
+
+		@include mq(small) {
+			font-size: 3rem;
+		}
+
+		@include mq(xl) {
+			font-size: 5rem;
+		}
+	}
+
+	&__subtitle {
+		font-size: 4rem;
+		line-height: 4.5rem;
+		color: var(--color-black);
+
+		@include mq(small) {
+			font-size: 5.4rem;
+			line-height: 6rem;
+		}
+
+		@include mq(xl) {
+			margin-top: 1.5rem;
+			font-size: 8rem;
+			line-height: 8rem;
+		}
+
+		&__dev {
+			display: block;
+			color: var(--color-purpul);
+		}
+	}
+
+	&__men {
+		&__mobile {
+			text-align: center;
+			margin-top: 2rem;
+			flex: 1;
+
+			@include mq(large) {
+				display: none;
+			}
+		}
+
+		&__desktop {
+			display: none;
+
+			@include mq(large) {
+				display: block;
+				width: 50%;
+			}
+		}
+	}
+
+	&__subtitle__line {
+		display: none;
+
+		@include mq(large) {
+			display: inline;
+		}
+	}
+
+	&__info {
+		@include mq(large) {
+			margin-top: 8rem;
+			flex: 1;
+		}
+	}
+}
