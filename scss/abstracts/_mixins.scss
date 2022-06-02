@@ -33,3 +33,47 @@
 		}
 	}
 }
+
+@mixin title {
+	font-size: 2.5rem;
+	color: var(--color-black);
+
+	@include mq(small) {
+		font-size: 3rem;
+	}
+
+	@include mq(xl) {
+		font-size: 3.4rem;
+	}
+}
+
+@mixin line {
+	width: 6rem;
+	height: 0.6rem;
+	background-color: var(--color-decoration-purpl);
+	border-radius: 1rem;
+	margin-bottom: 0.6rem;
+
+	@include mq(small) {
+		width: 6rem;
+		height: 0.6rem;
+	}
+
+	@include mq(xl) {
+		width: 9rem;
+		height: 0.8rem;
+		margin-bottom: 0;
+	}
+}
+
+@mixin decorationTop($position, $horizontal, $vertical) {
+	position: $position;
+	left: $horizontal;
+	top: $vertical;
+}
+
+@mixin decorationBottom($position, $horizontal, $vertical) {
+	position: $position;
+	left: $horizontal;
+	bottom: $vertical;
+}
