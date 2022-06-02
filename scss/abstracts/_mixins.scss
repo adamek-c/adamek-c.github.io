@@ -77,3 +77,10 @@
 	left: $horizontal;
 	bottom: $vertical;
 }
+
+@mixin lineDecoration($color) {
+	display: block;
+	width: 0.4rem;
+	margin-right: 1rem;
+	background-color: $color;
+}

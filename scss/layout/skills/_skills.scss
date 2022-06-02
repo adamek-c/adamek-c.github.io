@@ -51,11 +51,6 @@
 		}
 	}
 
-	&__decoration__triangle {
-		@include decorationTop(40%, 20%);
-		display: none;
-	}
-
 	&__info {
 		display: none;
 
