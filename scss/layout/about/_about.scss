@@ -37,10 +37,10 @@
 		position: relative;
 
 		&__decoration {
-			@include decorationTop(absolute, 16rem, -2rem);
+			@include decorationTop(16rem, -2rem);
 
 			@include mq(large) {
-				@include decorationTop(absolute, 17rem, -2rem);
+				@include decorationTop(17rem, -2rem);
 			}
 		}
 	}
@@ -75,17 +75,11 @@
 		}
 
 		&__decoration {
-			@include decorationBottom(absolute, 20rem, -2rem);
+			@include decorationBottom(20rem, -2rem);
 
 			@include mq(large) {
-				@include decorationBottom(absolute, 32rem, 26rem);
+				@include decorationBottom(32rem, 26rem);
 			}
-
-			// @include mq(small) {
-			//   @include decorationBottom(absolute, 20rem, -2rem);
-			// 	right: 30rem;
-			// 	bottom: -2rem;
-			// }
 
 			> svg {
 				width: 4rem;
@@ -125,10 +119,10 @@
 	}
 
 	&__blue__circle {
-		@include decorationTop(absolute, 20rem, 8rem);
+		@include decorationTop(20rem, 8rem);
 	}
 
 	&__orange__circle {
-		@include decorationBottom(absolute, 50rem, 0rem);
+		@include decorationBottom(50rem, 0rem);
 	}
 }

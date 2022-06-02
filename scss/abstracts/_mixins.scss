@@ -66,14 +66,14 @@
 	}
 }
 
-@mixin decorationTop($position, $horizontal, $vertical) {
-	position: $position;
+@mixin decorationTop($horizontal, $vertical) {
+	position: absolute;
 	left: $horizontal;
 	top: $vertical;
 }
 
-@mixin decorationBottom($position, $horizontal, $vertical) {
-	position: $position;
+@mixin decorationBottom($horizontal, $vertical) {
+	position: absolute;
 	left: $horizontal;
 	bottom: $vertical;
 }

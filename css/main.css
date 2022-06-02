@@ -21,7 +21,7 @@
   --font-family: "Poppins", sans-serif;
 }
 
-.hero, .about {
+.hero, .about, .skill {
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -542,5 +542,239 @@ nav {
   position: absolute;
   left: 50rem;
   bottom: 0rem;
+}
+
+.skill {
+  margin-top: 5rem;
+  padding: 0 2rem;
+}
+
+@media (min-width: 768px) {
+  .skill {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.skill__container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 8rem;
+}
+
+.skill__decoration__line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .skill__decoration__line {
+    display: block;
+  }
+}
+
+.skill__decoration__star {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .skill__decoration__star {
+    display: block;
+  }
+}
+
+.skill__decoration__circle-b {
+  position: absolute;
+  left: 10%;
+  bottom: 8rem;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .skill__decoration__circle-b {
+    display: block;
+  }
+}
+
+.skill__decoration__circle-s {
+  position: absolute;
+  left: 20%;
+  top: 4rem;
+  display: none;
+  z-index: -1;
+}
+
+@media (min-width: 1024px) {
+  .skill__decoration__circle-s {
+    display: block;
+  }
+}
+
+.skill__decoration__triangle {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  display: none;
+}
+
+.skill__info {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .skill__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.skill__info__line {
+  width: 6rem;
+  height: 0.6rem;
+  background-color: var(--color-yellow);
+  border-radius: 1rem;
+}
+
+.skill__info__title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+@media (min-width: 1500px) {
+  .skill__info__title {
+    font-size: 2.5rem;
+  }
+}
+
+.skill__info__tech {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 1500px) {
+  .skill__info__tech {
+    font-size: 2rem;
+  }
+}
+
+.skill__info__tech h4 {
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.skill__info__tech h4 :first-child {
+  margin-top: 0;
+}
+
+.skill__boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (203px)[4];
+      grid-template-rows: repeat(4, 203px);
+  row-gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .skill__boxes {
+    padding: 0 0 0 4rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media (min-width: 1500px) {
+  .skill__boxes {
+    -webkit-column-gap: 4rem;
+            column-gap: 4rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+}
+
+.skill__boxes__title {
+  color: var(--color-white);
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+
+.skill__boxes__container {
+  background-color: var(--color-decoration-box);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+@media (min-width: 1500px) {
+  .web {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+}
+
+@media (min-width: 1500px) {
+  .front {
+    grid-column: 2/-1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+}
+
+@media (min-width: 1500px) {
+  .services {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3/5;
+  }
+}
+
+@media (min-width: 1500px) {
+  .backend {
+    grid-column: 2/-1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3/5;
+  }
 }
 /*# sourceMappingURL=main.css.map */
