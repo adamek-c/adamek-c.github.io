@@ -1,6 +1,6 @@
 .contact {
 	@extend %container;
-	padding: 2rem;
+	padding: 2rem 2rem 8rem;
 	position: relative;
 
 	&__line {
@@ -25,7 +25,7 @@
 
 	&__dots {
 		@include mq(large) {
-			@include decorationBottom(50%, -10%);
+			@include decorationBottom(50%, -5%);
 			display: block;
 			transform: translate(-50%, -50%);
 		}
@@ -158,8 +158,8 @@
 		cursor: pointer;
 		transition: all 0.3s ease-in-out;
 
-		:hover {
-			background-color: var(--color-purpul);
+		&:hover {
+			background-color: var(--color-purple);
 		}
 	}
 }
