@@ -1,0 +1,173 @@
+.contact {
+	@extend %container;
+	padding: 2rem;
+	position: relative;
+
+	&__line {
+		@include line;
+	}
+
+	&__title {
+		@include title;
+	}
+
+	&__arrow,
+	&__dots {
+		display: none;
+	}
+
+	&__arrow {
+		@include mq(large) {
+			@include decorationTop(20%, -12%);
+			display: block;
+		}
+	}
+
+	&__dots {
+		@include mq(large) {
+			@include decorationBottom(50%, -10%);
+			display: block;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		@include mq(large) {
+			flex-direction: row;
+			margin-top: 8rem;
+			gap: 4rem;
+		}
+	}
+
+	&__form {
+		margin-top: 3rem;
+
+		@include mq(large) {
+			flex: 1;
+			margin-top: 2rem;
+		}
+	}
+
+	&__info {
+		margin-top: 2rem;
+		position: relative;
+
+		@include mq(large) {
+			flex: 1;
+			text-align: right;
+			border-right: 0.5rem solid var(--background-color-grey-input);
+			outline: none;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&__decoration {
+			display: none;
+			position: absolute;
+
+			@include mq(large) {
+				display: block;
+				left: 20%;
+			}
+		}
+
+		&__title {
+			color: var(--color-black);
+
+			@include mq(large) {
+				margin-right: 4rem;
+			}
+
+			> a {
+				@include mq(large) {
+					margin-left: 1rem;
+				}
+			}
+
+			> h4 {
+				@include mq(large) {
+					font-size: 1.4rem;
+					margin: 1rem 0;
+
+					:first-child {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.form {
+	&__line {
+		background-color: var(--background-color-grey);
+		width: 100%;
+		height: 0.5rem;
+		margin: 2rem 0;
+
+		@include mq(large) {
+			display: none;
+		}
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin-top: 2rem;
+
+		:first-child {
+			margin-top: 0;
+		}
+
+		label {
+			font-size: 1.6rem;
+			color: var(--color-black);
+			font-weight: 600;
+		}
+
+		input,
+		textarea {
+			outline: none;
+			border: none;
+			border-radius: 2rem;
+			margin-top: 1rem;
+			background-color: var(--background-color-grey-input);
+			font-size: 1.4rem;
+			padding: 1.2rem 1.6rem;
+		}
+
+		textarea {
+			resize: none;
+		}
+	}
+
+	&__btn {
+		margin-top: 2rem;
+		padding: 1.2rem 4.5rem;
+		outline: none;
+		border: none;
+		border-radius: 2rem;
+		color: var(--color-white);
+		background-color: var(--background-color-purple-bt);
+		font-size: 1.5rem;
+		letter-spacing: var(--letter-space-text);
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+
+		:hover {
+			background-color: var(--color-purpul);
+		}
+	}
+}
+
+.hidden {
+	display: none;
+
+	@include mq(large) {
+		display: block;
+	}
+}

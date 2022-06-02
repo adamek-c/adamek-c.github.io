@@ -70,12 +70,14 @@
 	position: absolute;
 	left: $horizontal;
 	top: $vertical;
+	@content;
 }
 
 @mixin decorationBottom($horizontal, $vertical) {
 	position: absolute;
 	left: $horizontal;
 	bottom: $vertical;
+	@content;
 }
 
 @mixin lineDecoration($color) {
