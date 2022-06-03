@@ -1,7 +1,6 @@
 .about {
 	@extend %container;
-	margin-top: 5rem;
-	padding: 2rem;
+	padding: 0 2rem 2rem 2rem;
 	overflow: hidden;
 
 	@include mq(large) {

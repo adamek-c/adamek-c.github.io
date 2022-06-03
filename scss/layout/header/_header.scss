@@ -1,5 +1,11 @@
 nav {
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: var(--color-white);
+	z-index: 1000;
 }
 
 .navbar {
@@ -15,6 +21,22 @@ nav {
 			display: none;
 		}
 	}
+
+	&__mobile {
+		position: absolute;
+		top: 100%;
+		right: 100%;
+		background: var(--color-white);
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 5rem;
+		transition: all 0.3s ease;
+
+		@include mq(medium) {
+			display: none;
+		}
+	}
 }
 
 .menu {
@@ -26,11 +48,31 @@ nav {
 
 	&__item {
 		margin-left: 3.3rem;
+
+		&__mobile {
+			margin-top: 1rem;
+		}
 	}
 
 	&__link {
 		font-size: 1.6rem;
 		color: var(--color-black);
 		transition: all 0.2s ease-in-out;
+
+		&__mobile {
+			font-size: 1.6rem;
+			color: var(--color-black);
+			transition: all 0.2s ease-in-out;
+		}
 	}
+}
+
+.active-mobile {
+	right: 0;
+}
+
+.absolute {
+	position: fixed;
+	top: -100%;
+	transition: all 0.4 ease;
 }
