@@ -86,3 +86,9 @@
 	margin-right: 1rem;
 	background-color: $color;
 }
+
+@mixin borderColor($color) {
+	border-right: 1px solid $color;
+	border-bottom: 1px solid $color;
+	border-left: 1px solid $color;
+}

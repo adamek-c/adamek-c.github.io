@@ -2,6 +2,7 @@
 	@extend %container;
 	margin-top: 5rem;
 	padding: 0 2rem;
+	transition: all 0.4s ease-in-out;
 
 	@include mq(medium) {
 		display: flex;
@@ -126,7 +127,48 @@
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
-			z-index: 10;
+			position: relative;
+			z-index: 100;
+			min-height: 203px;
+		}
+
+		&__list {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-height: 203px;
+			display: none;
+
+			@include mq(medium) {
+				display: none;
+			}
+
+			> * {
+				font-size: 1.5rem;
+				margin-top: 1rem;
+			}
+			:first-child {
+				margin-top: 0;
+			}
+
+			&--border-y {
+				@include borderColor(var(--color-yellow));
+			}
+
+			&--border-p {
+				@include borderColor(var(--color-purple));
+			}
+
+			&--border-b {
+				@include borderColor(var(--color-blue));
+			}
+
+			&--border-r {
+				@include borderColor(var(--color-red));
+			}
 		}
 	}
 }
@@ -153,5 +195,12 @@
 	@include mq(xl) {
 		grid-column: 2/-1;
 		grid-row: 3/5;
+	}
+}
+
+.active {
+	display: flex;
+	@include mq(medium) {
+		display: none;
 	}
 }
