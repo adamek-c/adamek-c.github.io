@@ -10,10 +10,12 @@ html {
 	scroll-behavior: smooth;
 	font-size: 65.5%;
 	font-family: var(--font-family);
+	overflow-x: hidden;
 }
 
 body {
 	letter-spacing: var(--letter-space-text);
+	overflow-x: hidden;
 }
 
 a {

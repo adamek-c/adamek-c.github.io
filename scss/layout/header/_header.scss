@@ -1,9 +1,4 @@
 nav {
-	box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
 	background-color: var(--color-white);
 	z-index: 1000;
 }
@@ -13,12 +8,25 @@ nav {
 	margin: 0 auto;
 	padding: 3rem 2rem;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
+
+	@include mq(medium) {
+		justify-content: start;
+	}
 
 	&__menu {
+		height: 3rem;
+		display: flex;
+		align-items: center;
 		@include mq(medium) {
 			display: none;
+		}
+		&__hamburger {
+			margin-right: 1rem;
+			font-size: 2rem;
+			font-weight: 500;
+			font-family: var(--font-link);
 		}
 	}
 
@@ -55,9 +63,10 @@ nav {
 	}
 
 	&__link {
-		font-size: 1.6rem;
+		font-size: 2rem;
 		color: var(--color-black);
 		transition: all 0.2s ease-in-out;
+		font-family: var(--font-link);
 
 		&__mobile {
 			font-size: 1.6rem;

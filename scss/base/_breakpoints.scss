@@ -1,4 +1,7 @@
 $breakpoints: (
+	xs: (
+		min-width: 290px,
+	),
 	small: (
 		min-width: 682px,
 	),
@@ -7,6 +10,9 @@ $breakpoints: (
 	),
 	large: (
 		min-width: 1024px,
+	),
+	xllarge: (
+		min-width: 1272px,
 	),
 	xl: (
 		min-width: 1500px,

@@ -1,34 +1,23 @@
 .hero {
 	@extend %container;
-	overflow: hidden;
+	max-width: 1200px;
+	width: 100%;
 	display: flex;
-	min-height: 100vh;
-	justify-content: center;
-	align-items: center;
+	min-height: 80vh;
 
 	&__front {
-		display: grid;
 		width: 100%;
-		height: 100%;
+		margin: 4rem 0;
 		padding: 2rem;
-		margin-top: 4rem;
 		line-height: 4rem;
-
-		@include mq(small) {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		@include mq(large) {
-			display: flex;
-			justify-content: space-between;
-			margin-top: 10rem;
-		}
+		font-family: var(--font-link);
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__dots {
 		display: flex;
-		line-height: 1.5rem;
+		margin-bottom: 0.7rem;
 
 		@include mq(xl) {
 			margin-bottom: 2rem;
@@ -36,38 +25,40 @@
 
 		&__yellow {
 			@include dots;
-			background-color: var(--color-yellow);
+			border: 4px solid var(--color-yellow);
 		}
 		&__red {
 			@include dots;
-			background-color: var(--color-red);
+			border: 4px solid var(--color-red);
 		}
 		&__purple {
 			@include dots;
-			background-color: var(--color-purple);
+			border: 4px solid var(--color-purple);
 		}
 		&__blue {
 			@include dots;
-			background-color: var(--color-blue);
+			border: 4px solid var(--color-blue);
 		}
 	}
 
 	&__title {
-		font-size: 2.5rem;
+		font-size: 4rem;
+		font-weight: 400;
+		text-transform: lowercase;
 
 		@include mq(small) {
-			font-size: 3rem;
+			font-size: 5rem;
 		}
 
 		@include mq(xl) {
-			font-size: 5rem;
+			font-size: 8rem;
 		}
 	}
 
 	&__subtitle {
 		font-size: 4rem;
 		line-height: 4.5rem;
-		color: var(--color-black);
+		font-weight: 400;
 
 		@include mq(small) {
 			font-size: 5.4rem;
@@ -82,14 +73,20 @@
 
 		&__dev {
 			display: block;
-			color: var(--color-purpul);
+			@include mq(medium) {
+				display: inline;
+			}
+			@include mq(large) {
+				display: block;
+			}
 		}
 	}
 
 	&__men {
+		overflow-x: hidden;
 		&__mobile {
 			text-align: center;
-			margin-top: 2rem;
+			margin-top: 6rem;
 			flex: 1;
 
 			@include mq(large) {
@@ -99,10 +96,17 @@
 
 		&__desktop {
 			display: none;
+			position: absolute;
 
 			@include mq(large) {
 				display: block;
-				width: 50%;
+				right: 0rem;
+				top: 10rem;
+			}
+			@include mq(xllarge) {
+				display: block;
+				right: 0rem;
+				top: 0rem;
 			}
 		}
 	}
@@ -116,6 +120,10 @@
 	}
 
 	&__info {
+		align-self: center;
+		@include mq(large) {
+			align-self: flex-start;
+		}
 		@include mq(large) {
 			margin-top: 8rem;
 			flex: 1;
