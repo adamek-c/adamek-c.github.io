@@ -68,8 +68,17 @@ h6 {
 }
 
 nav {
-  background-color: var(--color-white);
   z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  display: block;
 }
 
 .navbar {
@@ -103,6 +112,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: var(--font-link);
 }
 
 @media (min-width: 768px) {
@@ -115,7 +125,6 @@ nav {
   margin-right: 1rem;
   font-size: 2rem;
   font-weight: 500;
-  font-family: var(--font-link);
 }
 
 .navbar__mobile {
@@ -133,6 +142,7 @@ nav {
   padding: 5rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  font-family: var(--font-link);
 }
 
 @media (min-width: 768px) {
@@ -170,7 +180,7 @@ nav {
 }
 
 .menu__link__mobile {
-  font-size: 1.6rem;
+  font-size: 2.7rem;
   color: var(--color-black);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -198,7 +208,7 @@ nav {
 
 .hero__front {
   width: 100%;
-  margin: 4rem 0;
+  margin: 15rem 0;
   padding: 2rem;
   line-height: 4rem;
   display: -webkit-box;
@@ -208,6 +218,9 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero__dots {
