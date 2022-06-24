@@ -59,12 +59,12 @@ gsap.from(".navbar", {
 	duration: 1,
 });
 
-// gsap.to(".about__picture", {
-// 	duration: 0.75,
-// 	y: "-10px",
-// 	stagger: {
-// 		each: 0.1,
-// 		repeat: -1,
-// 		yoyo: true,
-// 	},
-// });
+gsap.to(".about__picture", {
+	duration: 0.75,
+	y: "-10px",
+	stagger: {
+		each: 0.1,
+		repeat: -1,
+		yoyo: true,
+	},
+});
