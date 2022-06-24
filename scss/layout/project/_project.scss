@@ -7,14 +7,6 @@
 		margin: 10rem auto;
 	}
 
-	&__line {
-		@include line;
-	}
-
-	&__title {
-		@include title;
-	}
-
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -92,22 +84,6 @@
 				order: 2;
 				flex: 1;
 			}
-		}
-	}
-
-	&__line__yellow {
-		@include mq(large) {
-			@include lineDecoration(var(--color-yellow));
-		}
-	}
-	&__line__purple {
-		@include mq(large) {
-			@include lineDecoration(var(--color-purple));
-		}
-	}
-	&__line__red {
-		@include mq(large) {
-			@include lineDecoration(var(--color-red));
 		}
 	}
 }

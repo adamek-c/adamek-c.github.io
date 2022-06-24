@@ -1,127 +1,64 @@
+#about-me {
+	@include mq(large) {
+		margin-top: 7rem;
+	}
+	@include mq(xllarge) {
+		margin-top: 13rem;
+	}
+	@include mq(xl) {
+		margin-top: 13rem;
+	}
+}
+
 .about {
 	@extend %container;
 	padding: 0 2rem 2rem 2rem;
-	overflow: hidden;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
 
-	@include mq(large) {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		column-gap: 4.5rem;
-		margin-top: 8rem;
-	}
-
-	&__line {
-		@include line;
-	}
-
-	&__title {
-		@include title;
-	}
-
-	&__decoration {
-		display: none;
+	&__info {
+		color: var(--color-black);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
 
 		@include mq(large) {
-			display: block;
-			position: relative;
+			flex-direction: row;
+			gap: 3rem;
+		}
+
+		@include mq(xllarge) {
+			justify-content: space-between;
 		}
 	}
 
 	&__text {
+		order: -1;
 		font-size: 1.6rem;
-	}
+		max-width: 500px;
+		padding: 40px;
+		background-color: var(--color-decoration-bg-text);
+		align-self: center;
 
-	&__info {
-		color: var(--color-black);
-		position: relative;
-
-		&__decoration {
-			@include decorationTop(16rem, -2rem);
-
-			@include mq(large) {
-				@include decorationTop(17rem, -2rem);
-			}
+		@include mq(large) {
+			order: 1;
 		}
-	}
-
-	&__text,
-	&__picture,
-	&__list {
-		margin-top: 3rem;
 	}
 
 	&__picture {
-		@include mq(large) {
-			margin-top: 0;
-			grid-area: 2/-2;
-		}
-
-		> img {
-			width: 100%;
-			height: 100%;
-
-			@include mq(small) {
-				width: auto;
-			}
-		}
-	}
-
-	&__hobby {
-		position: relative;
+		margin-top: 6rem;
 
 		@include mq(large) {
-			grid-column: 1/2;
-		}
-
-		&__decoration {
-			@include decorationBottom(20rem, -2rem);
-
-			@include mq(large) {
-				@include decorationBottom(32rem, 26rem);
-			}
-
-			> svg {
-				width: 4rem;
-
-				@include mq(small) {
-					width: 5.5rem;
-				}
-			}
-		}
-	}
-
-	&__line__hobby {
-		margin-top: 5rem;
-		width: 4rem;
-		height: 0.6rem;
-		background-color: var(--color-decoration-purpl);
-		border-radius: 1rem;
-		margin-bottom: 0.6rem;
-	}
-
-	&__intrest {
-		color: var(--color-black);
-		font-size: 1.8rem;
-
-		@include mq(small) {
-			font-size: 2.1rem;
-		}
-	}
-
-	&__list > li {
-		margin-top: 1rem;
-		font-size: 1.3rem;
-
-		:nth-child(1) {
 			margin-top: 0;
 		}
 	}
+}
 
-	&__blue__circle {
-		@include decorationTop(20rem, 8rem);
-	}
-
-	&__orange__circle {
-		@include decorationBottom(50rem, 0rem);
-	}
+.title {
+	@include title;
 }

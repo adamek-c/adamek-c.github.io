@@ -3,14 +3,6 @@
 	padding: 2rem 2rem 8rem;
 	position: relative;
 
-	&__line {
-		@include line;
-	}
-
-	&__title {
-		@include title;
-	}
-
 	&__arrow,
 	&__dots {
 		display: none;
@@ -18,14 +10,12 @@
 
 	&__arrow {
 		@include mq(large) {
-			@include decorationTop(20%, -12%);
 			display: block;
 		}
 	}
 
 	&__dots {
 		@include mq(large) {
-			@include decorationBottom(50%, -5%);
 			display: block;
 			transform: translate(-50%, -50%);
 		}

@@ -15,43 +15,6 @@
 		margin-top: 8rem;
 	}
 
-	&__decoration__line {
-		@include decorationTop(0, 50%);
-		display: none;
-
-		@include mq(medium) {
-			display: block;
-		}
-	}
-
-	&__decoration__star {
-		@include decorationTop(30%, 30%);
-		display: none;
-
-		@include mq(medium) {
-			display: block;
-		}
-	}
-
-	&__decoration__circle-b {
-		@include decorationBottom(10%, 8rem);
-		display: none;
-
-		@include mq(medium) {
-			display: block;
-		}
-	}
-
-	&__decoration__circle-s {
-		@include decorationTop(20%, 4rem);
-		display: none;
-		z-index: -1;
-
-		@include mq(large) {
-			display: block;
-		}
-	}
-
 	&__info {
 		display: none;
 
