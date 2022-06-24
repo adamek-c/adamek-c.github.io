@@ -1,86 +1,49 @@
+#skill {
+	margin-top: 4rem;
+}
+
 .skill {
 	@extend %container;
-	margin-top: 5rem;
 	padding: 0 2rem;
-	transition: all 0.4s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
 
-	@include mq(medium) {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	&__container {
-		position: relative;
-		overflow: hidden;
-		margin-top: 8rem;
-	}
-
-	&__info {
-		display: none;
-
-		@include mq(medium) {
-			display: flex;
-			flex-direction: column;
-			flex: 1;
-		}
-
-		&__line {
-			width: 6rem;
-			height: 0.6rem;
-			background-color: var(--color-yellow);
-			border-radius: 1rem;
-		}
-
-		&__title {
-			font-size: 1.9rem;
-			font-weight: 600;
-			color: var(--color-black);
-
-			@include mq(xl) {
-				font-size: 2.5rem;
-			}
-		}
-
-		&__tech {
-			margin-top: 2rem;
-			font-size: 1.6rem;
-
-			@include mq(xl) {
-				font-size: 2rem;
-			}
-
-			h4 {
-				font-weight: 400;
-				margin-top: 0.5rem;
-
-				:first-child {
-					margin-top: 0;
-				}
-			}
-		}
+	@include mq(large) {
+		margin-top: 0;
 	}
 
 	&__boxes {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(4, 203px);
-		row-gap: 3rem;
+		display: flex;
+		align-items: center;
+		gap: 3rem;
+		flex-direction: column;
 
-		@include mq(medium) {
-			padding: 0 0 0 4rem;
-			flex: 1;
-		}
-
-		@include mq(xl) {
-			column-gap: 4rem;
-			grid-template-columns: repeat(2, 1fr);
-			padding: 0;
+		@include mq(xllarge) {
+			flex-direction: row;
 		}
 
 		&__title {
 			color: var(--color-white);
 			margin-top: 1rem;
 			font-size: 1.6rem;
+
+			&-yellow {
+				color: var(--color-yellow);
+			}
+
+			&-purple {
+				color: var(--color-purple);
+			}
+
+			&-blue {
+				color: var(--color-blue);
+			}
+
+			&-red {
+				color: var(--color-red);
+			}
 		}
 
 		&__container {
@@ -90,80 +53,20 @@
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
-			position: relative;
 			z-index: 100;
-			min-height: 203px;
-		}
+			min-width: 300px;
+			min-height: 300px;
 
-		&__list {
-			width: 100%;
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			min-height: 203px;
-			display: none;
-
-			@include mq(medium) {
-				display: none;
-			}
-
-			> * {
-				font-size: 1.5rem;
-				margin-top: 1rem;
-			}
-			:first-child {
-				margin-top: 0;
-			}
-
-			&--border-y {
-				@include borderColor(var(--color-yellow));
-			}
-
-			&--border-p {
-				@include borderColor(var(--color-purple));
-			}
-
-			&--border-b {
-				@include borderColor(var(--color-blue));
-			}
-
-			&--border-r {
-				@include borderColor(var(--color-red));
+			@include mq(small) {
+				min-width: 350px;
+				min-height: 350px;
 			}
 		}
-	}
-}
 
-.web {
-	@include mq(xl) {
-		grid-column: 1/2;
-		grid-row: 1/3;
-	}
-}
-.front {
-	@include mq(xl) {
-		grid-column: 2/-1;
-		grid-row: 1/3;
-	}
-}
-.services {
-	@include mq(xl) {
-		grid-column: 1/2;
-		grid-row: 3/5;
-	}
-}
-.backend {
-	@include mq(xl) {
-		grid-column: 2/-1;
-		grid-row: 3/5;
-	}
-}
-
-.active {
-	display: flex;
-	@include mq(medium) {
-		display: none;
+		&__double {
+			&--space {
+				margin-top: 3rem;
+			}
+		}
 	}
 }
