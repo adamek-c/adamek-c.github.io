@@ -86,4 +86,20 @@
 			}
 		}
 	}
+
+	&__line__yellow {
+		@include mq(large) {
+			@include lineDecoration(var(--color-yellow));
+		}
+	}
+	&__line__purple {
+		@include mq(large) {
+			@include lineDecoration(var(--color-purple));
+		}
+	}
+	&__line__red {
+		@include mq(large) {
+			@include lineDecoration(var(--color-red));
+		}
+	}
 }

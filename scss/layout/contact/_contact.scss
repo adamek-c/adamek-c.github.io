@@ -1,25 +1,10 @@
+#contact {
+	position: relative;
+}
+
 .contact {
 	@extend %container;
 	padding: 2rem 2rem 8rem;
-	position: relative;
-
-	&__arrow,
-	&__dots {
-		display: none;
-	}
-
-	&__arrow {
-		@include mq(large) {
-			display: block;
-		}
-	}
-
-	&__dots {
-		@include mq(large) {
-			display: block;
-			transform: translate(-50%, -50%);
-		}
-	}
 
 	&__container {
 		display: flex;
@@ -55,16 +40,6 @@
 			justify-content: space-between;
 		}
 
-		&__decoration {
-			display: none;
-			position: absolute;
-
-			@include mq(large) {
-				display: block;
-				left: 20%;
-			}
-		}
-
 		&__title {
 			color: var(--color-black);
 
@@ -88,6 +63,18 @@
 					}
 				}
 			}
+		}
+	}
+
+	&__dots {
+		display: none;
+		position: absolute;
+		bottom: -3rem;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		@include mq(large) {
+			display: block;
 		}
 	}
 }
