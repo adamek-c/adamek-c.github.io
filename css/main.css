@@ -208,7 +208,7 @@ nav {
 
 .hero__front {
   width: 100%;
-  margin: 15rem 0;
+  margin: 15rem 0 0 0;
   padding: 2rem;
   line-height: 4rem;
   display: -webkit-box;
@@ -464,7 +464,7 @@ nav {
 
 @media (min-width: 1500px) {
   #about-me {
-    margin-top: 13rem;
+    margin-top: 23rem;
   }
 }
 
@@ -572,6 +572,7 @@ nav {
 
 #skill {
   margin-top: 4rem;
+  background-color: var(--background-color-grey);
 }
 
 .skill {
