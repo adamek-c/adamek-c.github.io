@@ -452,13 +452,13 @@ nav {
 
 @media (min-width: 1024px) {
   #about-me {
-    margin-top: 7rem;
+    margin-top: 15rem;
   }
 }
 
 @media (min-width: 1272px) {
   #about-me {
-    margin-top: 13rem;
+    margin-top: 18rem;
   }
 }
 

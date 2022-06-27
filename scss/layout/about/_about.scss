@@ -1,9 +1,9 @@
 #about-me {
 	@include mq(large) {
-		margin-top: 7rem;
+		margin-top: 15rem;
 	}
 	@include mq(xllarge) {
-		margin-top: 13rem;
+		margin-top: 18rem;
 	}
 	@include mq(xl) {
 		margin-top: 23rem;
