@@ -20,6 +20,7 @@
 		align-items: center;
 		gap: 3rem;
 		flex-direction: column;
+		padding: 3rem 0;
 
 		@include mq(xllarge) {
 			flex-direction: row;
