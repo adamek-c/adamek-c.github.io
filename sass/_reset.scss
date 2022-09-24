@@ -14,3 +14,27 @@ html {
 	margin: 0;
 	font: inherit;
 }
+
+body {
+	font-family: $ff-Fahkwang;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+section {
+	margin-top: 6rem;
+}
+
+.container {
+	max-width: 77.5em;
+	padding-inline: calc((#{$padding-basic} * 2) + 0.25rem);
+	margin-inline: auto;
+}

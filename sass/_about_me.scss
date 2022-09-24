@@ -1,0 +1,21 @@
+.about {
+	padding-top: calc(#{$padding-basic} * 2);
+	display: flex;
+	flex-direction: column;
+
+	&__picture {
+		width: minmax(100%, 400px);
+		margin-inline: auto;
+	}
+
+	&__text {
+		margin-top: calc(#{$margin-basic} * 6);
+		text-align: center;
+		font: inherit;
+	}
+
+	&__link {
+		color: $black;
+		font-weight: $fw-700;
+	}
+}
