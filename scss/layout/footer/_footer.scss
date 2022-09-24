@@ -1,9 +1,0 @@
-.footer {
-	text-align: center;
-	padding: 5rem;
-	border-top: 1px solid rgba(0, 0, 0, 0.05);
-
-	@include mq(large) {
-		margin-top: 10rem;
-	}
-}
