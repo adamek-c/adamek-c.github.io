@@ -1,0 +1,19 @@
+.skill {
+	&__text {
+		> h2 {
+			text-transform: uppercase;
+			position: relative;
+			font-weight: $fw-700;
+			overflow: hidden;
+			font-size: $heading-h4;
+			height: calc(#{$heading-h4} + 1rem);
+			margin: 0;
+			color: $black-50;
+		}
+
+		&__hide {
+			position: absolute;
+			z-index: 100;
+		}
+	}
+}

@@ -35,6 +35,10 @@ section {
   margin-top: 6rem;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   max-width: 77.5em;
   padding-inline: calc((0.5rem * 2) + 0.25rem);
@@ -52,6 +56,11 @@ h3 {
 
 p {
   color: rgba(45, 37, 37, 0.75);
+}
+
+li {
+  color: rgba(45, 37, 37, 0.5);
+  font-weight: 600;
 }
 
 .hero {
@@ -160,6 +169,7 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: calc((0.5rem * 8) + 0.5rem);
+  padding-top: 0.5rem;
 }
 
 .project__one, .project__two, .project__three {
@@ -187,5 +197,21 @@ p {
 .project__one:hover::after, .project__two:hover::after, .project__three:hover::after {
   top: 0%;
   right: 0%;
+}
+
+.skill__text > h2 {
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 700;
+  overflow: hidden;
+  font-size: 2.3125rem;
+  height: calc(2.3125rem + 1rem);
+  margin: 0;
+  color: rgba(45, 37, 37, 0.5);
+}
+
+.skill__text__hide {
+  position: absolute;
+  z-index: 100;
 }
 /*# sourceMappingURL=main.css.map */
