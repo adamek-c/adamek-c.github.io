@@ -1,0 +1,33 @@
+.project {
+	display: flex;
+	flex-wrap: wrap;
+	gap: calc((#{$margin-basic} * 8) + 0.5rem);
+
+	&__one,
+	&__two,
+	&__three {
+		min-width: 17rem;
+		min-height: 19.8125rem;
+		background: $black-25;
+		border-radius: 0.5rem;
+		position: relative;
+		cursor: pointer;
+
+		&::after {
+			position: absolute;
+			content: "";
+			min-width: 17rem;
+			min-height: 19.8125rem;
+			border: 0.1875rem solid $primary;
+			border-radius: 0.5rem;
+			top: -0.5rem;
+			right: -0.5rem;
+			transition: all 0.4s ease;
+		}
+
+		&:hover::after {
+			top: 0%;
+			right: 0%;
+		}
+	}
+}

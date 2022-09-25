@@ -4,8 +4,8 @@
 	flex-direction: column;
 
 	&__picture {
-		width: minmax(100%, 400px);
 		margin-inline: auto;
+		display: block;
 	}
 
 	&__text {
