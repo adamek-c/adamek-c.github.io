@@ -29,8 +29,10 @@
 			border-radius: $border-radius-full;
 			box-shadow: $box-shadow-button;
 			transition: all 0.4s ease;
+			display: inline-block;
 
 			&::before {
+				display: inline-block;
 				position: absolute;
 				content: "";
 				width: 100%;

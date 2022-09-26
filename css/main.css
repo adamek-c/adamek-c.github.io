@@ -45,6 +45,10 @@ ul {
   margin-inline: auto;
 }
 
+.background {
+  background-color: #2d2525;
+}
+
 h1 {
   color: #2d2525;
   font-weight: 700;
@@ -104,9 +108,11 @@ li {
           box-shadow: 3.27491px 88.9397px 69px rgba(0, 0, 0, 0.022144), 1.92827px 52.3677px 35.9904px rgba(0, 0, 0, 0.035072), 0.99033px 26.8954px 16.8912px rgba(0, 0, 0, 0.044928), 0.39823px 10.8151px 7.3968px rgba(0, 0, 0, 0.057856), 0.08908px 2.41916px 3.2016px rgba(0, 0, 0, 0.08);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  display: inline-block;
 }
 
 .hero__info__btn::before {
+  display: inline-block;
   position: absolute;
   content: "";
   width: 100%;
@@ -136,7 +142,6 @@ li {
 }
 
 .about {
-  padding-top: calc(0.5rem * 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,5 +218,29 @@ li {
 .skill__text__hide {
   position: absolute;
   z-index: 100;
+}
+
+.contact {
+  padding-block: calc(0.5rem * 4);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.contact__main > * {
+  font-size: 2.3125rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.contact__email {
+  font-size: 1.3125rem;
+  color: #ee6882;
 }
 /*# sourceMappingURL=main.css.map */

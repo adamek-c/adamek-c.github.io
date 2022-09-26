@@ -42,3 +42,7 @@ ul {
 	padding-inline: calc((#{$padding-basic} * 2) + 0.25rem);
 	margin-inline: auto;
 }
+
+.background {
+	background-color: $black;
+}
