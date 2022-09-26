@@ -18,11 +18,10 @@
 			<div class="container">
 				<div class="hero">
 					<div class="hero__info">
-						<h3>Hi I'm Adam</h3>
+						<h3>Hi, I'm Adam</h3>
 						<h1>
-							Front-end <br />
-							Developer & <br />
-							Web desginer
+							Front-end Developer &
+							<span> Web desginer </span>
 						</h1>
 						<p class="hero__info__text">
 							Person who loves make website and desing. I want to improve the
@@ -31,7 +30,17 @@
 						<a class="hero__info__btn" href="#">See Work</a>
 					</div>
 					<div class="hero__img">
-						<img src="./assets/Rakiet-desktop.png" alt="Rakiet" />
+						<picture>
+							<source
+								srcset="./assets/rakiet-min.png"
+								media="(min-width:64em )"
+							/>
+							<source
+								srcset="./assets/rakiet-tablet.png"
+								media="(min-width:52.125em )"
+							/>
+							<img src="./assets/rakiet-mobile.png" alt="Rakiet" />
+						</picture>
 					</div>
 				</div>
 			</div>
@@ -40,7 +49,13 @@
 			<div class="container">
 				<div class="about">
 					<div class="about__picture">
-						<img src="./assets/person.png" alt="Adam Ciołek" />
+						<picture>
+							<source
+								srcset="./assets/person-tablet-min.png"
+								media="(min-width:52.125em )"
+							/>
+							<img src="./assets/person-mobile-min.png" alt="Adam Ciołek" />
+						</picture>
 					</div>
 					<p class="about__text">
 						Hej, mam na imię Adam od roku uczę się programowania. Moim celem
@@ -99,7 +114,15 @@
 				</div>
 			</div>
 		</section>
-		<footer></footer>
+		<footer class="background">
+			<div class="container">
+				<div class="footer">
+					<a href="#">github</a>
+					<p>copywriter &copy; 2022</p>
+					<p>design by adam</p>
+				</div>
+			</div>
+		</footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 		<script src="app.js"></script>
 	</body>

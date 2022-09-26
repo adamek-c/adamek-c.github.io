@@ -10,7 +10,10 @@
 	&__text {
 		margin-top: calc(#{$margin-basic} * 6);
 		text-align: center;
-		font: inherit;
+
+		@include mq(medium) {
+			font-size: $type-basic-secondary;
+		}
 	}
 
 	&__link {

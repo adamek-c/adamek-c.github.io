@@ -14,7 +14,7 @@
 	}
 
 	&__email {
-		font-size: $paragraph;
+		font-size: calc(#{$heading-h6} - 0.125rem);
 		color: $primary;
 	}
 }

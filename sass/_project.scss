@@ -1,6 +1,7 @@
 .project {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: calc((#{$margin-basic} * 8) + 0.5rem);
 	padding-top: $padding-basic;
 

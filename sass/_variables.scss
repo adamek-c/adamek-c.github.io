@@ -11,13 +11,20 @@ $white: hsl(0, 0%, 100%);
 // font
 $ff-Fahkwang: "Fahkwang", sans-serif;
 
-// Size
-$heading-h1: 5.5rem; //88px
+// Size desktop
 $heading-h2: 4.125rem; //66px
 $heading-h3: 3.125rem; //50px
 $heading-h4: 2.3125rem; //37px
 $heading-h5: 1.75rem; //28px
-$paragraph: 1.3125rem; //27px
+
+// Size tablet
+$heading-h3-tablet: 2.875rem; //46px
+$heading-h4-tablet: 1.875rem; //30px
+
+// Size base
+$heading-h6: 1.3125rem; //21px
+$type-basic-secondary: 1.125rem; //18px
+$type-basic: 1rem; //16px
 
 // font weight
 $fw-700: 700;

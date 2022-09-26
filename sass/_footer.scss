@@ -1,0 +1,21 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	padding-block: calc(#{$padding-basic} * 4);
+	> * {
+		color: $white;
+	}
+
+	:not(:first-child) {
+		font-size: 0.75rem;
+		text-transform: capitalize;
+	}
+
+	> a {
+		font-size: 1rem;
+		text-transform: uppercase;
+		font-weight: $fw-700;
+		margin-bottom: $margin-basic;
+		display: inline-block;
+	}
+}

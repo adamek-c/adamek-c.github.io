@@ -3,22 +3,59 @@
 	flex-direction: column;
 	text-align: center;
 
+	@include mq(large) {
+		flex-direction: row;
+		min-height: 90vh;
+		justify-content: center;
+		align-items: center;
+		text-align: left;
+	}
+
 	&__info {
+		flex: 1;
+		@include mq(large) {
+			max-width: 30.8125rem;
+		}
 		> h3 {
 			margin-bottom: $margin-basic;
 			font-size: $heading-h5;
 			background: -webkit-linear-gradient(90deg, $primary 0%, $secondary 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
+
+			@include mq(medium) {
+				font-size: $heading-h4-tablet;
+			}
+			@include mq(exlarge) {
+				font-size: $heading-h4;
+			}
 		}
 		> h1 {
 			margin-bottom: calc(#{$margin-basic} * 4);
 			font-size: $heading-h4;
+
+			> span {
+				display: block;
+			}
+
+			@include mq(medium) {
+				font-size: $heading-h3-tablet;
+			}
+			@include mq(exlarge) {
+				font-size: $heading-h3;
+			}
 		}
 
 		&__text {
 			margin-bottom: calc(#{$margin-basic} * 8);
-			font: inherit;
+
+			@include mq(medium) {
+				font-size: $type-basic-secondary;
+			}
+
+			@include mq(exlarge) {
+				font-size: $heading-h6;
+			}
 		}
 		&__btn {
 			position: relative;
@@ -57,6 +94,14 @@
 	}
 
 	&__img {
+		flex: 1;
 		order: -1;
+		max-width: max-content;
+		margin-inline: auto;
+
+		@include mq(large) {
+			order: 1;
+			margin-top: -6rem;
+		}
 	}
 }

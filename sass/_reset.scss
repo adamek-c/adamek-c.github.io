@@ -41,6 +41,10 @@ ul {
 	max-width: 77.5em;
 	padding-inline: calc((#{$padding-basic} * 2) + 0.25rem);
 	margin-inline: auto;
+
+	@include mq(medium) {
+		padding-inline: calc(#{$padding-basic} * 6.25);
+	}
 }
 
 .background {

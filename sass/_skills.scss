@@ -1,6 +1,8 @@
 .skill {
 	&__text {
 		> h2 {
+			display: flex;
+			justify-content: center;
 			text-transform: uppercase;
 			position: relative;
 			font-weight: $fw-700;
