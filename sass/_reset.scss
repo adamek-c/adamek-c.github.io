@@ -31,6 +31,10 @@ img {
 
 section {
 	margin-top: 6rem;
+
+	@include mq(exlarge) {
+		margin-top: calc(6rem + 2.25rem);
+	}
 }
 
 ul {
@@ -38,15 +42,25 @@ ul {
 }
 
 .container {
-	max-width: 77.5em;
+	max-width: 80em;
 	padding-inline: calc((#{$padding-basic} * 2) + 0.25rem);
 	margin-inline: auto;
 
 	@include mq(medium) {
 		padding-inline: calc(#{$padding-basic} * 6.25);
 	}
+
+	@include mq(exlarge) {
+		padding-inline: calc((#{$padding-basic} * 2) + 0.25rem);
+	}
 }
 
 .background {
 	background-color: $black;
+}
+
+.no-margin {
+	@include mq(large) {
+		margin: 0;
+	}
 }

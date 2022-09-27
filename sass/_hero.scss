@@ -10,6 +10,9 @@
 		align-items: center;
 		text-align: left;
 	}
+	@include mq(exlarge) {
+		min-height: 95vh;
+	}
 
 	&__info {
 		flex: 1;
