@@ -2,6 +2,17 @@
 	display: flex;
 	flex-direction: column;
 	padding-block: calc(#{$padding-basic} * 4);
+
+	@media screen and (min-width: 41rem) {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	@include mq(large) {
+		padding-block: calc(#{$padding-basic} * 6);
+	}
+
 	> * {
 		color: $white;
 	}
@@ -17,5 +28,10 @@
 		font-weight: $fw-700;
 		margin-bottom: $margin-basic;
 		display: inline-block;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: $primary;
+		}
 	}
 }

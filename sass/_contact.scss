@@ -5,16 +5,51 @@
 	flex-direction: column;
 	gap: 2rem;
 
+	@media screen and (min-width: 41rem) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	@include mq(large) {
+		padding-block: calc(#{$padding-basic} * 6);
+	}
+
 	&__main {
 		> * {
-			font-size: $heading-h4;
+			font-size: $heading-h5;
 			text-transform: uppercase;
 			display: block;
+			font-weight: $fw-600;
+
+			@include mq(medium) {
+				font-size: $heading-h4;
+			}
+			@include mq(large) {
+				font-size: $heading-h3;
+			}
+			@include mq(exlarge) {
+				font-size: $heading-h2;
+			}
 		}
 	}
 
 	&__email {
 		font-size: calc(#{$heading-h6} - 0.125rem);
 		color: $primary;
+
+		@media screen and (min-width: 41rem) {
+			align-self: flex-end;
+		}
+
+		@include mq(medium) {
+			font-size: calc(#{$heading-h5} - 0.125rem);
+		}
+
+		@include mq(large) {
+			font-size: calc(#{$heading-h5} - 0.09375rem);
+		}
+		@include mq(exlarge) {
+			font-size: calc(#{$heading-h4} - 0.125rem);
+		}
 	}
 }

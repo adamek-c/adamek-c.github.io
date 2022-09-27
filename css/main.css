@@ -45,6 +45,10 @@ ul {
   list-style: none;
 }
 
+p {
+  line-height: 143%;
+}
+
 .container {
   max-width: 80em;
   padding-inline: calc((0.5rem * 2) + 0.25rem);
@@ -339,6 +343,12 @@ li {
 .about__link {
   color: #2d2525;
   font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about__link:hover {
+  color: #ee6882;
 }
 
 .project {
@@ -421,6 +431,20 @@ li {
   color: rgba(45, 37, 37, 0.5);
 }
 
+@media (min-width: 52.125em) {
+  .skill__text > h2 {
+    font-size: 3.125rem;
+    height: calc(3.125rem + 1rem);
+  }
+}
+
+@media (min-width: 77.5em) {
+  .skill__text > h2 {
+    font-size: 4.125rem;
+    height: calc(4.125rem + 1rem);
+  }
+}
+
 .skill__text__hide {
   position: absolute;
   z-index: 100;
@@ -439,15 +463,77 @@ li {
   gap: 2rem;
 }
 
+@media screen and (min-width: 41rem) {
+  .contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 64em) {
+  .contact {
+    padding-block: calc(0.5rem * 6);
+  }
+}
+
 .contact__main > * {
-  font-size: 2.3125rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
   display: block;
+  font-weight: 600;
+}
+
+@media (min-width: 52.125em) {
+  .contact__main > * {
+    font-size: 2.3125rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .contact__main > * {
+    font-size: 3.125rem;
+  }
+}
+
+@media (min-width: 77.5em) {
+  .contact__main > * {
+    font-size: 4.125rem;
+  }
 }
 
 .contact__email {
   font-size: calc(1.3125rem - 0.125rem);
   color: #ee6882;
+}
+
+@media screen and (min-width: 41rem) {
+  .contact__email {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media (min-width: 52.125em) {
+  .contact__email {
+    font-size: calc(1.75rem - 0.125rem);
+  }
+}
+
+@media (min-width: 64em) {
+  .contact__email {
+    font-size: calc(1.75rem - 0.09375rem);
+  }
+}
+
+@media (min-width: 77.5em) {
+  .contact__email {
+    font-size: calc(2.3125rem - 0.125rem);
+  }
 }
 
 .footer {
@@ -459,6 +545,27 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-block: calc(0.5rem * 4);
+}
+
+@media screen and (min-width: 41rem) {
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer {
+    padding-block: calc(0.5rem * 6);
+  }
 }
 
 .footer > * {
@@ -476,5 +583,11 @@ li {
   font-weight: 700;
   margin-bottom: 0.5rem;
   display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer > a:hover {
+  color: #ee6882;
 }
 /*# sourceMappingURL=main.css.map */

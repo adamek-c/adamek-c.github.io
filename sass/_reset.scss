@@ -41,6 +41,10 @@ ul {
 	list-style: none;
 }
 
+p {
+	line-height: 143%;
+}
+
 .container {
 	max-width: 80em;
 	padding-inline: calc((#{$padding-basic} * 2) + 0.25rem);

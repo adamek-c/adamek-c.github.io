@@ -11,6 +11,16 @@
 			height: calc(#{$heading-h4} + 1rem);
 			margin: 0;
 			color: $black-50;
+
+			@include mq(medium) {
+				font-size: $heading-h3;
+				height: calc(#{$heading-h3} + 1rem);
+			}
+
+			@include mq(exlarge) {
+				font-size: $heading-h2;
+				height: calc(#{$heading-h2} + 1rem);
+			}
 		}
 
 		&__hide {
