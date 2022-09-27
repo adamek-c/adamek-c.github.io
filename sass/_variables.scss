@@ -12,19 +12,16 @@ $white: hsl(0, 0%, 100%);
 $ff-Fahkwang: "Fahkwang", sans-serif;
 
 // Size desktop
-$heading-h2: 4.125rem; //66px
-$heading-h3: 3.125rem; //50px
-$heading-h4: 2.3125rem; //37px
-$heading-h5: 1.75rem; //28px
-
-// Size tablet
-$heading-h3-tablet: 2.875rem; //46px
-$heading-h4-tablet: 1.875rem; //30px
+$heading-h1: 3.583125rem; //57.33px
+$heading-h2: 2.488125rem; //39.81px
+$heading-h3: 2.07375rem; //33.18px
+$heading-h4: 1.728125rem; //27.65px
+$heading-h5: 1.44rem; //23.04px
+$heading-h6: 1.2rem; //19.2px
 
 // Size base
-$heading-h6: 1.3125rem; //21px
-$type-basic-secondary: 1.125rem; //18px
 $type-basic: 1rem; //16px
+$type-basic-small: 0.833125rem; //13.33px
 
 // font weight
 $fw-700: 700;
@@ -45,3 +42,6 @@ $padding-basic: 0.5rem;
 
 // border-radius
 $border-radius-full: 6.25em;
+
+// Line height
+$line-height: 1.5;

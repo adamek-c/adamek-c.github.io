@@ -16,45 +16,53 @@
 
 	&__info {
 		flex: 1;
+
+		@include mq(small) {
+			margin-top: 2rem;
+		}
+
 		@include mq(large) {
 			max-width: 30.8125rem;
+			margin-top: inherit;
 		}
 		> h3 {
 			margin-bottom: $margin-basic;
-			font-size: $heading-h5;
+			font-size: $heading-h4;
 			background: -webkit-linear-gradient(90deg, $primary 0%, $secondary 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 
 			@include mq(medium) {
-				font-size: $heading-h4-tablet;
+				font-size: $heading-h3;
 			}
 			@include mq(exlarge) {
-				font-size: $heading-h4;
+				font-size: $heading-h2;
 			}
 		}
 		> h1 {
 			margin-bottom: calc(#{$margin-basic} * 4);
-			font-size: $heading-h4;
+			font-size: $heading-h3;
+			line-height: 1.2;
 
 			> span {
 				display: block;
 			}
 
 			@include mq(medium) {
-				font-size: $heading-h3-tablet;
+				font-size: $heading-h2;
 			}
 			@include mq(exlarge) {
-				font-size: $heading-h3;
+				font-size: $heading-h1;
 			}
 		}
 
 		&__text {
 			margin-bottom: calc(#{$margin-basic} * 8);
+			line-height: $line-height;
 
-			@include mq(medium) {
-				font-size: $type-basic-secondary;
-			}
+			// @include mq(medium) {
+			// 	font-size: $type-basic-secondary;
+			// }
 
 			@include mq(exlarge) {
 				font-size: $heading-h6;

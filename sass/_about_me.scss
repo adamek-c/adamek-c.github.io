@@ -31,17 +31,16 @@
 		flex: 1;
 		margin-top: calc(#{$margin-basic} * 6);
 		text-align: center;
+		line-height: $line-height;
 
-		@include mq(medium) {
-			font-size: $type-basic-secondary;
-		}
+		// @include mq(medium) {
+		// 	font-size: $type-basic-secondary;
+		// }
 
 		@include mq(large) {
 			order: -1;
 			text-align: left;
-			font-size: $type-basic-secondary;
 			max-width: 38.75rem;
-			line-height: 143%;
 		}
 
 		@include mq(exlarge) {
